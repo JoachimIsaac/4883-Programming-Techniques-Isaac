@@ -3,7 +3,5 @@
 #### Email: joachimvivian3@gmail.com
 #### Website: http://jisaac-sps-spring20.appspot.com/
 #### Image:
-![](images/joachim.png)
+![](images/joachim.jpeg))
 
-### Avatar:
-![](images/joachim.jpeg)
