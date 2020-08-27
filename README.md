@@ -6,4 +6,4 @@
 ![](images/joachim.png)
 
 ### Avatar:
-![](images/joachim.png)
+![](images/joachim.jpeg)
