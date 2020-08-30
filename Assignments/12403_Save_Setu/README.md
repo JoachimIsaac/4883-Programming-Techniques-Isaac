@@ -1,13 +1,12 @@
-
-## 11172 - Relational Operator
+## 11727 -  
 
 ### Joachim Isaac 
 
 ### Description:
-Given two numerical values your job is just to find out the relationship between them
-that is (i) First one is greater than the second (ii) First one is less than the second or (iii) First and second one is equal.
 
-Based on these results we output <, > or =
+
+
+
 
 
 ### Files
@@ -16,11 +15,8 @@ Based on these results we output <, > or =
 | :---: | --------------------------  | ---------------------------------------------------------- |
 |   1   | [main.py](./main.py)        | solution file.                                             |
 |   2   | [input1.txt](./input1.txt)  | input1                                                     |
-|   3   | [input2.txt](./input2.txt)  | input2                                                     |
-|   4   | [input3.txt](./input3.txt)  | input3                                                     |
-|   5   | [result1.txt](./result1.txt)| result1                                                    |
-|   6   | [result2.txt](./result2.txt)| result2                                                    |
-|   7   | [result3.txt](./result3.txt)| result3                                                    |
+|   3   | [result1.txt](./result1.txt)| result1                                                    |
+
 
 
 

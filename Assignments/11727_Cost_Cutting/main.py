@@ -1,12 +1,14 @@
 import sys
 
 # For getting input
-sys.stdin = open('input4.txt', 'r')
-# sys.stdin = open('input5.txt', 'r')
-# sys.stdin = open('input6.txt', 'r')
+# sys.stdin = open('input1.txt', 'r')
+# sys.stdin = open('input2.txt', 'r')
+sys.stdin = open('input3.txt', 'r')
 #
 # Printing the Output
-sys.stdout = open('result.txt', 'w')
+# sys.stdout = open('result1.txt', 'w')
+# sys.stdout = open('result2.txt', 'w')
+sys.stdout = open('result3.txt', 'w')
 
 number_of_test_cases = number_of_test_cases = int(sys.stdin.readline())
 counter = 1

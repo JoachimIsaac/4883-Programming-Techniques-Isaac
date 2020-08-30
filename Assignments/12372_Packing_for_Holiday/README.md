@@ -1,13 +1,12 @@
-
-## 11172 - Relational Operator
+## 12372 -  
 
 ### Joachim Isaac 
 
 ### Description:
-Given two numerical values your job is just to find out the relationship between them
-that is (i) First one is greater than the second (ii) First one is less than the second or (iii) First and second one is equal.
 
-Based on these results we output <, > or =
+
+
+
 
 
 ### Files

@@ -2,12 +2,14 @@
 import sys
 
 # For getting input
-# sys.stdin = open('input12.txt', 'r')
-# sys.stdin = open('input5.txt', 'r')
-# sys.stdin = open('input6.txt', 'r')
+sys.stdin = open('input1.txt', 'r')
+# sys.stdin = open('input2.txt', 'r')
+# sys.stdin = open('input3.txt', 'r')
 #
 # Printing the Output
-# sys.stdout = open('result.txt', 'w')
+sys.stdout = open('result1.txt', 'w')
+# sys.stdout = open('result2.txt', 'w')
+# sys.stdout = open('result3.txt', 'w')
 
 
 while True:
@@ -17,7 +19,7 @@ while True:
         break
 
     dX, dY = map(int, sys.stdin.readline().split())
-    # print(str(dX) +" "+ str(dY))
+
     for case in range(number_of_test_cases):
 
         current_cordinates = map(int, sys.stdin.readline().split())

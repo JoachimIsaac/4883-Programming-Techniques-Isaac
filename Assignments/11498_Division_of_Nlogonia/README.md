@@ -1,13 +1,19 @@
-
-## 11172 - Relational Operator
+## 11172 -  Division of Nlogonia
 
 ### Joachim Isaac 
 
 ### Description:
-Given two numerical values your job is just to find out the relationship between them
-that is (i) First one is greater than the second (ii) First one is less than the second or (iii) First and second one is equal.
+We get a division point for each test case and then we compare the division point with the other cordinates within each testcase. 
+Each testcase has it's own division point and it's own sets of cordinates.
+Based on the cordinates and the division point we print:
+"divisa"
+"NE" 
+"NO"
+"SO"
+"SE" 
 
-Based on these results we output <, > or =
+
+
 
 
 ### Files
