@@ -1,9 +1,15 @@
-## 12372 -  
+## 12372 - Packing for Holiday 
 
 ### Joachim Isaac 
 
 ### Description:
-
+Please write a program for
+him which calculates whether a rectangular box fits in his suitcase or not provided the length, width
+and height of the box. Note that, sides of the box must be parallel to the sides of the suitcase.
+Prints whether  a box can fit or not into Mr. Bean's box. 
+Output:
+--> Case #: Good 
+--> Case #: Bad 
 
 
 

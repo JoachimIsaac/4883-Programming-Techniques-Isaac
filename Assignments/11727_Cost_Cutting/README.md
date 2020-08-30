@@ -1,11 +1,12 @@
-## 11727 -  
+## 11727 - Cost Cutting 
 
 ### Joachim Isaac 
 
 ### Description:
-
-
-
+You will be given the salaries of these 3 employees working
+in the accounts department. You have to find out the salary
+of the person who survives.
+Essentially print out the empolyee who survives for each case. 
 
 
 
