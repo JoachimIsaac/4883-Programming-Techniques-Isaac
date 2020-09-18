@@ -5,12 +5,12 @@
 #include <queue>
 
 
-//ref https://www.itread01.com/content/1549209094.html
+
 using namespace std;
 
 int main()
 {
-    int t,scenarioNumber=1;
+    int t,scenarioNumber = 1;
 
     while(cin>>t&&t)
     {
@@ -37,15 +37,20 @@ int main()
         {
             string command;
             cin>>command;
-            if(command[0]=='S')
+
+            if(command[0]=='S'){
                 break;
+            }
             else if(command[0]=='E')
             {
                 int x;
                 cin>>x;
                 int id = Teams[x];
-                if(teamB[id].empty())
+
+                if(teamB[id].empty()){
                     teamA.push(id);
+                }
+
                 teamB[id].push(x);
             }
             else if(command[0]=='D')
@@ -54,8 +59,9 @@ int main()
                 cout<<teamB[value].front()<<endl;
                 teamB[value].pop();
 
-                if(teamB[value].empty())
+                if(teamB[value].empty()){
                     teamA.pop();
+                }
             }
         }
 
