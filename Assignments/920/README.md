@@ -19,7 +19,7 @@ only a col follows a peak and conversely).
 
 |   #   | File                        | Description                                                |
 | :---: | --------------------------  | ---------------------------------------------------------- |
-|   1   | [main.py](./main.cpp)        | solution file.                                             |
+|   1   | [main.cpp](./main.cpp)        | solution file.                                             |
 |   2   | [input1.txt](./input1.txt)  | input1                                                     |
 |   3   | [input2.txt](./input2.txt)  | input2                                                     |
 
