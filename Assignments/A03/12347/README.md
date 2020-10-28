@@ -19,20 +19,20 @@ Why build the tree? Well after building the tree we cabn simply traverse it in p
 the tree in post-order format.
 
 ```
-Steps: 
+#Steps: 
 1. We build the binary search tree with our input.
 2. After building the tree we need to traverse from the root in post order fashion and print each node value. 
 (left, right, print)
 ```
 
 ```
-Language used: Python 
+#Language used: Python 
 
 Problem solving paradigm: Traversal / Iteration
 ```
 
 ```
-Data structures chosen and why:
+#Data structures chosen and why:
 I chose a tree, because it would allow us to do the traversal very easily, either iteratively or recursively.
 Using an array or priority queue may have had more of a benefit in actual runtime, 
 but I opted to go with a solution/Data structure, which had a simpler implementation for the traversal.
@@ -42,7 +42,7 @@ I thought it would be trivial to write up DFS in a Post-Order fashion.
 ```
 
 ```
-Did speed factor in to previous choices:
+#Did speed factor in to previous choices:
 Interms of speed, I look at time compleixty
 
 N is the number of nodes.
@@ -55,7 +55,7 @@ than a solution that is obsure and might have alot of edge cases to deal with.
 ```
 
 ```
-Could any speed ups be included but were not:
+#Could any speed ups be included but were not:
 For my specific solution no.
 Thinking of alternative ways to get the answer using diffrent data structures like arrays or priority queues may have
 gotten us a fast solution interms of runtime.
