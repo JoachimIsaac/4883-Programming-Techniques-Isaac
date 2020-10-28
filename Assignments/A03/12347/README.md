@@ -34,10 +34,11 @@ Problem solving paradigm: Traversal / Iteration
 ```
 Data structures chosen and why:
 I chose a tree, because it would allow us to do the traversal very easily, either iteratively or recursively.
-Using an array or priority queue may have had more of a benefit in actual runtime , but I opted to go with a solution/Data structure,
-which had a simpler implementation for the traversal.
+Using an array or priority queue may have had more of a benefit in actual runtime, 
+but I opted to go with a solution/Data structure, which had a simpler implementation for the traversal.
 
-With a tree DFS/BFS is like bread and butter and so I thought it would be trivial to write up DFS in Post-order fashion.
+For trees DFS/BFS is like bread and butter and so 
+I thought it would be trivial to write up DFS in a Post-Order fashion.
 ```
 
 ```
