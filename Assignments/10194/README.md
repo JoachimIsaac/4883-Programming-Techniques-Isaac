@@ -1,0 +1,43 @@
+## 10183 How many Fibs?
+
+### Joachim Isaac 
+
+### Description:
+Recall the definition of the Fibonacci numbers:
+f1 := 1
+f2 := 2
+fn := fn−1 + fn−2 (n ≥ 3)
+Given two numbers a and b, calculate how many Fibonacci numbers are in the range [a, b].
+
+Input
+The input contains several test cases. Each test case consists of two non-negative integer numbers a
+and b. Input is terminated by a = b = 0. Otherwise, a ≤ b ≤ 10100. The numbers a and b are given
+with no superfluous leading zeros.
+
+Output
+For each test case output on a single line the number of Fibonacci numbers fi with a ≤ fi ≤ b
+
+
+### Files
+
+|   #   | File                        | Description                                                |
+| :---: | --------------------------  | ---------------------------------------------------------- |
+|   1   | [main.py](./main.py)        | solution file.                                             |
+|   2   | [input1](./input1)          | input1                                                     | 
+
+
+
+
+### Instructions
+
+-In the terminal you just have to type in python or python3 and the file name, then press enter
+
+
+##############################################################################################
+
+### Sources
+Bisect notes:
+https://docs.python.org/3.0/library/bisect.html
+
+Yield notes:
+https://www.geeksforgeeks.org/use-yield-keyword-instead-return-keyword-python/
