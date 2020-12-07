@@ -1,4 +1,4 @@
-## 12578- 12578 - 10:6:2
+## 12578- 10:6:2
 ### Joachim Isaac  
 ### Approach:
 
@@ -183,6 +183,7 @@ this ends up giving us the result we want
 T = numberOfTestCases
 
 loop for T times:
+
      rec1,rec2 = read in the two rectangles 
 
      if do_overlap(rec1,rec2){
