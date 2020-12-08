@@ -169,17 +169,21 @@ int main(){
 
 
 
-			for (a = 0; R[a] != '#'; a++)	A.push_back(R[a]);
+			for (a = 0; R[a] != '#'; a++){
+				A.push_back(R[a]);
+			}
 
+			for (a++; R[a] != '@'; a++){
+				AS = AS * 10 + R[a] - '0';
+			}
 
-			for (a++; R[a] != '@'; a++)	AS = AS * 10 + R[a] - '0';
+			for (a++; R[a] != '#'; a++){
+				BS = BS * 10 + R[a] - '0';
+			}
 
-
-			for (a++; R[a] != '#'; a++)	BS = BS * 10 + R[a] - '0';
-
-
-			for (a++; R[a] != '\0'; a++)	B.push_back(R[a]);
-
+			for (a++; R[a] != '\0'; a++){
+				B.push_back(R[a]);
+			}
 
 
 
@@ -189,24 +193,43 @@ int main(){
 
 					T[k].goalScore += AS;
 					T[k].goalAgainst += BS;
-					if (AS > BS)	T[k].win++;
-					if (AS == BS)	T[k].tie++;
-					if (AS < BS)	T[k].loss++;
+					
+					
+					if (AS == BS){
+						T[k].tie++;
+					}
+
+					if (AS > BS){
+						T[k].win++;
+					}
+
+					if (AS < BS){
+						T[k].loss++;
+					}
 
 				}
+
 				if (T[k].name == B){
 
 					T[k].goalScore += BS;
 
 					T[k].goalAgainst += AS;
 
-					if (AS < BS)	T[k].win++;
+					
+					if (AS == BS){
+						T[k].tie++;
+					}
 
-					if (AS == BS)	T[k].tie++;
+					if (AS < BS){
+						T[k].win++;
+					}
 
-					if (AS > BS)	T[k].loss++;
+					if (AS > BS){
+						T[k].loss++;
+					}
 
 				}
+				
 			}
 		}
 
@@ -224,9 +247,12 @@ int main(){
 			cout << T[i].goalScore - T[i].goalAgainst << "gd (" << T[i].goalScore << "-" << T[i].goalAgainst << ")" << endl;
 		}
         
-		if (t != 0)
+
+		if (t != 0){
 
 			cout << endl;
+		}
+
 	}
 
 	return 0;
