@@ -38,8 +38,10 @@ int main()
 
         for(it=tree_map.begin();it!=tree_map.end();it++)
         {
-            double answer=(it->second)*100.0/total;
-            printf("%s %.4lf\n",it->first.c_str(),answer);
+            double answer = (it->second) * 100.0/total;
+
+            printf("%s %.4lf\n", it->first.c_str(), answer);
+
         }
 
 

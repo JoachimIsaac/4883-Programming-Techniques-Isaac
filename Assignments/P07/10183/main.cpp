@@ -3,12 +3,17 @@
 #include<algorithm>
 #include<cstdio>
 using namespace std;
+
+
+
 struct team{
 	string name;
 	int goalScore;
 	int goalAgainst;
 	int win, tie, loss;
 };
+
+
 bool cmp(struct team A, struct team B){
 
 
@@ -19,31 +24,66 @@ bool cmp(struct team A, struct team B){
 	PB = B.win * 3 + B.tie;
 
 
-	if (PA > PB) return true;
 
-	if (PB > PA) return false;
+	if (PB > PA){
 
-	if (A.win > B.win)	return true;
+		return false;
+	}
 
-	if (A.win < B.win)	return false;
 
-	if (A.goalScore - A.goalAgainst>B.goalScore - B.goalAgainst)	return true;
+	if (PA > PB){
+		return true;
+	}
 
-	if (A.goalScore - A.goalAgainst<B.goalScore - B.goalAgainst)	return false;
+	
 
-	if (A.goalScore > B.goalScore)	return true;
+	if (A.win < B.win){
+		return false;
+	}
 
-	if (A.goalScore < B.goalScore)	return false;
+
+	if (A.win > B.win){
+		return true;
+	}
+
+	
+
+	if (A.goalScore - A.goalAgainst<B.goalScore - B.goalAgainst){
+			return false;
+		}
+
+	if (A.goalScore - A.goalAgainst>B.goalScore - B.goalAgainst){
+		return true;
+	}
+
+
+
+	if (A.goalScore < B.goalScore){	
+		return false;
+	}
+
+	if (A.goalScore > B.goalScore){
+		return true;
+	}
+
+	
 
 	PA = A.win + A.tie + A.loss;
 
 	PB = B.win + B.tie + B.loss;
 
 
-	if (PA > PB)	return false;
+	if (PA < PB) {
 
-	if (PA < PB)	return true;
+		return true;
+	}
 
+	if (PA > PB) {
+
+		return false;
+	}
+
+	
 
 	for (int i = 0;; i++){ // ignore case
 
@@ -51,19 +91,36 @@ bool cmp(struct team A, struct team B){
 
 		char b = B.name[i];
 
-		if (a >= 'A'&&a <= 'Z')	a += 32;
+		if (a >= 'A'&&a <= 'Z'){
+			a += 32;
+		}
 
-		if (b >= 'A'&&b <= 'Z')	b += 32;
+		if (b >= 'A'&&b <= 'Z'){
+			b += 32;
+		}
 
-		if (a == '\0')	return true;
+		if (a == '\0'){
+			return true;
+		}
 
-		if (b == '\0')	return false;
+		if (b == '\0'){
 
-		if (a > b)	return false;
+		return false;
+		}
 
-		if (a < b)	return true;
+		if (a > b){
+			return false;
+		}
+
+		if (a < b){
+			return true;
+		}
+
 	}
 }
+
+
+
 int main(){
 
 	int t;
@@ -110,6 +167,8 @@ int main(){
 
 			getline(cin, R);
 
+
+
 			for (a = 0; R[a] != '#'; a++)	A.push_back(R[a]);
 
 
@@ -122,13 +181,18 @@ int main(){
 			for (a++; R[a] != '\0'; a++)	B.push_back(R[a]);
 
 
+
+
 			for (int k = 0; k < n; k++){
+
 				if (T[k].name == A){
+
 					T[k].goalScore += AS;
 					T[k].goalAgainst += BS;
 					if (AS > BS)	T[k].win++;
 					if (AS == BS)	T[k].tie++;
 					if (AS < BS)	T[k].loss++;
+
 				}
 				if (T[k].name == B){
 
@@ -145,6 +209,8 @@ int main(){
 				}
 			}
 		}
+
+
 		sort(T, T + n, cmp);
 
 		cout << tournamentName << endl;

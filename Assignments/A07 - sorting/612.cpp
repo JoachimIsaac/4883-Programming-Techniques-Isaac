@@ -64,18 +64,23 @@ int main(){
 
 
       if( caseNumber > 0 ){
+
         printf("\n");
+
       }
 
 
       int n, m;
 
+
       scanf("%d%d", &n, &m);
+
 
       vector<DNA> DNAs;
 
 
       for( int i = 0 ; i < m ; ++i ){
+
         string input;
         cin >> input;
 
@@ -84,16 +89,17 @@ int main(){
 
       }
 
+
       sort(DNAs.begin(), DNAs.end(), cmpDNA);
 
+
       for( int i = 0 ; i < DNAs.size() ; ++i ){
-
         printf("%s\n", DNAs[i].sequence.c_str());
-
-
       }
 
+
     }
+
   }
 
   return 0;
